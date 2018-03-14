@@ -1,0 +1,22 @@
+body {
+    text-align: center;
+    max-width: 960px;
+    margin: auto;
+}
+h1{
+    margin-top: 10%;
+}
+.qDisplay {
+    margin-top: 20%;
+}
+
+ul {
+    list-style-type: upper-alpha;
+    line-height: 1.5;
+}
+
+li {
+    text-align: left;
+    width: 50%;
+    margin: auto;
+}
