@@ -4,14 +4,14 @@ qList = [
         question: "who is your daddy, and what does he do?",
         answer: "I'm detective John Kimble",
         wrongs: ["tumor", "also tumor", "ferret"],
-        explain: 'test',
+        explain: 'Kindergarden Cop',
     },
 
     q1 = {
         question: "Conan, what is best in life?",
         answer: "To crush your enemies, see them driven before you, and to hear the lamentations of their women.",
         wrongs: ["the open steppe", "fleet horse", "falcons at your wrist", "the wind in your hair"],
-        explain: 'test',
+        explain: 'Conan the Barbarian',
     },
 ];
 
@@ -91,7 +91,7 @@ function displayA() {
     $('li#correct').css("color", "green").off("click");
     $('li#incorrect').css("color", "red").off("click").fadeOut(2000);
     setTimeout(function(){
-    $('<li>').html(qList[qNum].explain).hide().appendTo('#answers').fadeIn(2000);
+    $('<p>').html(qList[qNum].explain).hide().appendTo('#answers').fadeIn(2000);
     }, 2000);
 }
 
