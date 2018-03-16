@@ -58,7 +58,7 @@ function displayQ (num) {
     let x = $('<li>').attr("id", "correct").html(current.answer).on("click", function(){
         clearTimeout(qTimer);
         clearInterval(countdown);
-        displayA();
+        displayA(current.explain);
         correct++;
         setTimeout(nextQ, 1000 * answerTime);
     });
@@ -68,7 +68,7 @@ function displayQ (num) {
         x = $('<li>').attr("id", "incorrect").html(current.wrongs[i]).on("click", function(){
             clearTimeout(qTimer);
             clearInterval(countdown);
-            displayA();
+            displayA(current.explain);
             wrong++;
             setTimeout(nextQ, 1000 * answerTime);
         });
@@ -87,11 +87,11 @@ function displayQ (num) {
 }
 
 //this shows the answers by changing the colors :D
-function displayA() {
+function displayA(str) {
     $('li#correct').css("color", "green").off("click");
     $('li#incorrect').css("color", "red").off("click").fadeOut(2000);
     setTimeout(function(){
-    $('<p>').html(qList[qNum].explain).hide().appendTo('#answers').fadeIn(2000);
+    $('<p>').html(str).hide().appendTo('#answers').fadeIn(2000);
     }, 2000);
 }
 
