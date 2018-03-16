@@ -89,9 +89,10 @@ function displayQ (num) {
 //this shows the answers by changing the colors :D
 function displayA(str) {
     $('li#correct').css("color", "green").off("click");
-    $('li#incorrect').css("color", "red").off("click").fadeOut(2000).remove();
+    $('li#incorrect').css("color", "red").off("click").fadeOut(2000);
     setTimeout(function(){
-    $('<p>').html(str).hide().appendTo('#answers').fadeIn(2000);
+        $('li#incorrect, li br').remove();
+        $('<p>').html(str).hide().appendTo('#answers').fadeIn(2000);
     }, 2000);
 }
 
