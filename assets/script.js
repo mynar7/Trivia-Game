@@ -19,6 +19,7 @@ let qNum = 0; //what number question are we on
 let qTimer;
 let countdown;
 let seconds;
+let secondsMax = 10;
 
 function clock() {
     seconds--;
@@ -92,7 +93,7 @@ function nextQ() {
     if (qNum < qList.length) {
         $('ul#answers').empty();
         displayQ(qNum);
-        seconds = 6;
+        seconds = secondsMax;
         $('#time').html('00:0' + (seconds - 1));
         qTimer = setTimeout(nextQTimer, 1000 * seconds);
         countdown = setInterval(clock, 1000);
