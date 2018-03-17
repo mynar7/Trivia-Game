@@ -4,6 +4,7 @@ body {
     color: yellow;
     max-width: 960px;
     margin: auto;
+    background-color: rgb(44,44,44);
     background-image: url('./images/batmanGrey.jpg');
     background-position: top;
     background-repeat: no-repeat;
