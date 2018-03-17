@@ -5,6 +5,8 @@ body {
     max-width: 960px;
     margin: auto;
     background-image: url('./images/batmanGrey.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
 }
 .logo {
     margin: 10% auto 0;
