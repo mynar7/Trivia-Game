@@ -1,13 +1,46 @@
 body {
     text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: yellow;
     max-width: 960px;
     margin: auto;
+    background-image: url('./images/batmanGrey.jpg');
 }
-h1{
-    margin-top: 10%;
+.logo {
+    margin: 10% auto 0;
+    font-size: 3em;
+    font-family: 'Carrois Gothic SC', sans-serif;
+    font-weight: bolder;
+    background-color: black;
+    width: 300px;
+    border-radius: 20px;
+}
+.logoSub{
+    position: relative;
+    width: 100px;
+    bottom: 30px;
+    left: 150px;
+    margin: 0 auto;
+    font-size: 2em;
+    transform: rotate(-30deg);
+    padding: 0;
+}
+.time{
+    font-family: 'Orbitron', sans-serif;
 }
 .qDisplay {
-    margin-top: 20%;
+    margin: 0 auto;
+    padding: 20px;
+    width: 60%;
+    min-height: 400px;
+    border-radius: 10px;
+    background-color: rgba(245, 245, 245, 0.561);
+}
+.qDisplay>ul>p {
+    text-align: left;
+    font-size: 1.2em;
+    width: 70%;
+    margin: auto;
 }
 
 ul {
@@ -17,6 +50,20 @@ ul {
 
 li {
     text-align: left;
-    width: 50%;
-    margin: auto;
+    max-width: 70%;
+    font-size: 1.5em;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+button {
+    padding: 20px 30px;
+    background-color: yellow;
+    color: black;
+    font-family: 'Carrois Gothic SC', sans-serif;
+    font-size: 1.5em;
+    margin-top: 20px;
+    border: 3px black solid;
+    border-radius: 10px;
+    cursor: pointer;        
 }
