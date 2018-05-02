@@ -14,7 +14,7 @@ The game runs through an array of question objects that contain all the data for
 ## Challenges
 <ul><li>Coming up with a unique format to ask questions proved challenging. Faced with choosing between displaying all questions at once or multiple on a page, I chose to stick with displaying one question at a time to focus the user on the current question, correct answer and rationale. I felt this was a more engaging way to present the questions and drew the user's eyes to each question/answer as they were displayed.</li>
 
-Styling the game also proved challenging. While I would like to make the UI as beautiful and detailed as possible, I also had to balance that against distracting the player from focusing on the questions themselves. In the end I chose a minimalist format that looked presentable but also focused mainly on the question content.</li></ul>
+<li>Styling the game also proved challenging. While I would like to make the UI as beautiful and detailed as possible, I also had to balance that against distracting the player from focusing on the questions themselves. In the end I chose a minimalist format that looked presentable but also focused mainly on the question content.</li></ul>
 
 ## Future Plans
 * I would like to improve the display on mobile devices, maximizing the question space and increasing the display length of questions and answers.
